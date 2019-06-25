@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Currency Converter</title>
+    <script src="./js/bundle.js"></script>
+  </head>
+  <body>
+    <div id="app">
+
+      <h1>Currency Converter</h1>
+
+      <h3>Current Exchange Rates (EUR):</h3>
+
+      <section>
+        <div v-for="(rate,key) in exchangeRates">
+          {{key}}: {{rate}}
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>
